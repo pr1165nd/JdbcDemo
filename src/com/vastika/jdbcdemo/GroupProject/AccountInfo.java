@@ -1,12 +1,12 @@
 package com.vastika.jdbcdemo.GroupProject;
 
-public class account_info {
+public class AccountInfo {
 	private int id;
 	private String name;
 	private String address;
 	private double phoneNo;
 	
-	public account_info(int id,String name,String address,double phoneNo) {
+	public AccountInfo(int id,String name,String address,double phoneNo) {
 		this.id=id;
 		this.name=name;
 		this.address=address;

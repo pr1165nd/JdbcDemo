@@ -11,7 +11,7 @@ public class UserDao {
 	String SQL="insert into user_tbl(user_name,age)values('hari',20)";
 	
 	
-	public void addUserInf(account_info a,double balance) {
+	public void addUserInf(AccountInfo a,double balance) {
 		String SQL="insert into account_info_tbl(id,name,Address,phoneNo)values("+a.getId()+",'"+a.getName()+"','"+a.getAddress()+"',"+a.getPhoneNo()+")";
 		String BLNC_SQL="insert into account_balance_tbl(id,balance)values("+a.getId()+","+balance+")";
 		try (	Statement st =DbUtil.getConnection().createStatement();){

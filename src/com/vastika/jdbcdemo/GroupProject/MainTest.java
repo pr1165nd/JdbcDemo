@@ -37,7 +37,7 @@ public class MainTest {
 				phoneNo=Double.parseDouble(usrinput.nextLine());
 				System.out.print("Initial Balance: ");
 				balance=Double.parseDouble(usrinput.nextLine());
-				user.addUserInf(new account_info(id,name,Address,phoneNo), balance);
+				user.addUserInf(new AccountInfo(id,name,Address,phoneNo), balance);
 				break;
 			}
 			case "B": {
