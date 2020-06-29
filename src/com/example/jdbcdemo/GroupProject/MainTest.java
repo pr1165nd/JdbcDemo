@@ -73,5 +73,7 @@ public class MainTest {
 	static void menu() {
 		System.out.println("PLease choose from one of the following:");
 		System.out.println("A:open account     B:deposit         C:withdraw");
+		System.out.println("-----------------------------------------");
+
 	}
 }
