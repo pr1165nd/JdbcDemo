@@ -1,4 +1,4 @@
-package com.vastika.jdbcdemo.GroupProject;
+package com.example.jdbcdemo.GroupProject;
 
 public class AccountInfo {
 	private int id;

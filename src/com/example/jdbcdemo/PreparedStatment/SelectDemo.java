@@ -1,21 +1,22 @@
-package com.vastika.jdbcdemo.Statement;
+package com.example.jdbcdemo.PreparedStatment;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.vastika.jdbcdemo.util.DbUtil;
+import com.example.jdbcdemo.util.DbUtil;
 
 public class SelectDemo {
-	//read data from database
-	public static final String SQL="select * from user_tbl";
+	public static final String SQL="select * from user_tbl where id=?";
 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		try(Statement st=DbUtil.getConnection().createStatement();) {
-			ResultSet rs= st.executeQuery(SQL);
+		try(PreparedStatement ps=DbUtil.getConnection().prepareStatement(SQL)) {
+			ps.setInt(1,1);
+			ResultSet rs= ps.executeQuery();
 			while (rs.next()) {
 				System.out.println("id is: "+ rs.getInt("id"));			//we can give the index too . 
 				System.out.println("username is: " + rs.getString(1));  //using index

@@ -1,10 +1,10 @@
-package com.vastika.jdbcdemo.PreparedStatment;
+package com.example.jdbcdemo.PreparedStatment;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.vastika.jdbcdemo.util.DbUtil;
+import com.example.jdbcdemo.util.DbUtil;
 
 public class UpdateDemo {
 	public static final String SQL="update user_tbl set user_name=?,age=? where id=?";

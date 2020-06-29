@@ -1,11 +1,11 @@
-package com.vastika.jdbcdemo.GroupProject;
+package com.example.jdbcdemo.GroupProject;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.vastika.jdbcdemo.util.DbUtil;
+import com.example.jdbcdemo.util.DbUtil;
 public class UserDao {
 	
 	String SQL="insert into user_tbl(user_name,age)values('hari',20)";

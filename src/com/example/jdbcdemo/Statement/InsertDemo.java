@@ -1,10 +1,10 @@
-package com.vastika.jdbcdemo.Statement;
+package com.example.jdbcdemo.Statement;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.vastika.jdbcdemo.util.DbUtil;
+import com.example.jdbcdemo.util.DbUtil;
 
 public class InsertDemo {
 

@@ -1,9 +1,9 @@
-package com.vastika.jdbcdemo.PreparedStatment;
+package com.example.jdbcdemo.PreparedStatment;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.vastika.jdbcdemo.util.DbUtil;
+import com.example.jdbcdemo.util.DbUtil;
 
 public class InsertDemo {
 

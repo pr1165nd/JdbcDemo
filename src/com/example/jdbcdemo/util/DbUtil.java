@@ -1,4 +1,4 @@
-package com.vastika.jdbcdemo.util;
+package com.example.jdbcdemo.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
